@@ -1,0 +1,7 @@
+.logo_yutus {
+    display: inline-block;
+    background-image: url("./assets/images/YouTube_Logo.png");
+    width: 100px;
+    height: 100px;
+    background-position: center;
+}
