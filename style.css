@@ -1,7 +1,104 @@
-.logo_yutus {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+}
+.aside-options {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 56px;
+}
+.three-lines-container {
     display: inline-block;
-    background-image: url("./assets/images/YouTube_Logo.png");
-    width: 100px;
-    height: 100px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 8px 0 8px 8px;
+}
+.three-lines-container:active {
+    border-radius: 20px;
+    background-color: #e5e5e5;
+}
+._three-lines-button {
+    width: 24px;
+    height: 24px;
+}
+._logo-youtube {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg");
     background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 23px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.searcher-section{
+    height: 56px;
+    width: 690px;
+}
+.searcher-container {
+    display: flex;
+    height: 56px;
+    width: 100%;
+}
+.searcher-container form {
+    display: flex;
+    align-items: center;
+    width: inherit;
+}
+._input-search {
+    height: 40px;
+    padding: 2px 6px;
+    color: #8f8f8f;
+    font-size: 1.6rem;
+    width: 100%;
+    max-width: 538px;
+    border: 1px solid #d3d3d3;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+._input-button {
+    width: 64px;
+    height: 40px;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    border-left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+._searcher-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+._mic-container {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+._mic-container:active {
+    background-color: #e5e5e5;
+}
+._mic-icon {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
