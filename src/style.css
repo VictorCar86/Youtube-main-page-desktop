@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+}
+.extra-options {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 56px;
+}
+._special-buttons-container {
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 20px;
+}
+._special-buttons-container:active {
+    background-color: #e5e5e5;
+}
+._three-lines-button {
+    width: 24px;
+    height: 24px;
+}
+._logo-youtube {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 90px;
+    height: 23px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.searcher-section{
+    height: 56px;
+    width: 730px;
+}
+.searcher-container {
+    display: flex;
+    height: 56px;
+    width: 100%;
+}
+.searcher-container form {
+    display: flex;
+    align-items: center;
+    width: inherit;
+}
+._input-search {
+    height: 40px;
+    padding: 2px 6px;
+    margin-left: 80px;
+    color: #8f8f8f;
+    font-size: 1.6rem;
+    width: 100%;
+    max-width: 538px;
+    border: 1px solid #d3d3d3;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    -webkit-box-shadow: inset 0px 4px 31px -33px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 4px 31px -33px rgba(0,0,0,1);
+    box-shadow: inset 0px 4px 31px -33px rgba(0,0,0,1);
+}
+._input-button {
+    width: 64px;
+    height: 40px;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    border-left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+._input-button:hover {
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 0px 14px 63px -33px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 14px 63px -33px rgba(0,0,0,1);
+    box-shadow: 0px 14px 63px -33px rgba(0,0,0,1);
+}
+._input-button:active {
+    background-color: #dedede;
+}
+._searcher-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+._special-buttons-container--mic-container {
+    background-color: #f9f9f9;
+    margin-left: 8px;
+}
+.extra-section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 225px;
+}
+._special-buttons-container--apps-container {
+    margin-right: 8px;
+}
+._special-buttons-container--settings-container {
+    margin-right: 8px;
+}
+._sign-in-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 109px;
+    height: 40px;
+    padding: 5px 11px;
+    border: 1px solid #2573d9;
+    border-radius: 2px;
+}
+._sign-in-container:active {
+    background-color: #e5e5e5;
+}
+._sign-in-icon {
+    width: 24px;
+    height: 24px;
+    fill: #2573d9;
+}
+._sign-in-text {
+    color: #2573d9;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-left: 8px;
+}
+
+/* Main */
+
+/* Aside Section */
+
+.aside-container {
+    float: left;
+    width: 12.3%;
+    height: 100%;
+    padding-right: 10px;
+}
+.guide-container {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.history-container {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+._list-button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+._list-button--active {
+    background-color: #e5e5e5;
+    font-weight: bold;
+}
+._input-button--active:hover {
+    background-color: #cacaca;
+}
+._list-button:hover {
+    background-color: #e1e1e1;
+}
+._list-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 24px;
+}
+._list-text {
+    font-size: 1.4rem;
+    padding-bottom: 1px;
+}
+.aside-sign-in-container {
+    width: 100%;
+    height: 121px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.aside-sign-in-info-container {
+    padding: 16px 32px;
+}
+.aside-sign-in-info-container > span {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 19.6px;
+    margin-top: 1px;
+}
+.new-sign-in-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 12px;
+    width: 117px;
+    height: 36px;
+    padding: 5px 15px;
+    border-radius: 2px;
+    border: 1px solid #2573d9;
+}
+.other-guide-container {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.other-guide-container > span {
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 1.4rem;
+    color: #606060;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+._list-button img {
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    margin: 0 24px;
+}
+.guide-links-container a {
+    text-decoration: none;
+    color: #606060;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-right: 5.5px;
+    line-height: 1.8rem;
+}
+.guide-links-primary {
+    padding: 16px 52px 0 24px;
+    height: 70px;
+}
+.guide-links-secondary {
+    padding: 12px 10px 0 24px;
+    height: 66px;
+}
+.guide-links-container span {
+    display: inline-block;
+    padding: 18px 24px;
+    color: #909090;
+    font-size: 1.2rem;
+}
+
+/* Principal Section */
+
+.principal-container {
+    float: right;
+    width: 87.5%;
+    height: 100vh;
+}
+.categories-container {
+    width: 100%;
+    height: 58px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.categories-container::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+.categories-container::-webkit-scrollbar {
+    height: 3px;
+    width: 6px;
+	background-color: #F5F5F5;
+}
+.categories-container::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3;
+}
+.categories-button {
+    background-color: #f2f2f2;
+    height: 32px;
+    padding: 0 12px;
+    margin: 12px 11px 12px 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 15px;
+    font-size: 1.4rem;
+}
+.categories-button--main {
+    margin-left: 26px;
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.videos-container {
+    width: 100%;
+    display: grid;
+}
+.video-style {
+    width: 370px;
+    height: 370px;
+}
