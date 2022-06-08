@@ -258,6 +258,7 @@ html {
     float: right;
     width: 87.5%;
     height: 100vh;
+    background-color: #f9f9f9;
 }
 .categories-container {
     width: 100%;
@@ -267,6 +268,7 @@ html {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    background-color: white;
 }
 .categories-container::-webkit-scrollbar-track {
 	background-color: #F5F5F5;
@@ -283,22 +285,77 @@ html {
     background-color: #f2f2f2;
     height: 32px;
     padding: 0 12px;
-    margin: 12px 11px 12px 0;
+    padding-bottom: 2px;
+    margin: 12px 10px 12px 0;
     border: 1px solid #d3d3d3;
-    border-radius: 15px;
+    border-radius: 16px;
     font-size: 1.4rem;
+    letter-spacing: 0.2px;
 }
 .categories-button--main {
     margin-left: 26px;
     color: white;
     background-color: black;
     border-color: black;
+    padding-right: 13px;
 }
 .videos-container {
     width: 100%;
     display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-auto-rows: 360px;
+    justify-content: center;
+    margin-top: 22px;
+    gap: 15px;
 }
 .video-style {
-    width: 370px;
-    height: 370px;
+    width: 360px;
+    height: 360px;
+}
+.video-style_description-container {
+    display: flex;
+    position: relative;
+}
+.video-style_description-container > span {
+    display: inline-block;
+    background-image: url("/assets/icons/607-36x36.webp");
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    margin-top: 9px;
+    margin-right: 12px;
+}
+.video-style_description-container ._title-video {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 44px;
+    width: 288px;
+    line-height: 22px;
+    overflow: hidden;
+    margin-top: 9px;
+}
+.video-style_description-container ._title-description {
+    font-size: 1.4rem;
+    color: #606060;
+}
+.video-style_description-container ._title-description ._title-description_d1 {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+}
+.video-style_description-container ._title-description ._verified-icon {
+    width: 14px;
+    height: 14px;
+    fill: #606060;
+    margin-left: 4px;
+}
+.video-style_description-container ._title-description ._title-description_d2 {
+    display: block;
+    margin-top: 3px;
+}
+._special-buttons-container--relative-position {
+    position: absolute;
+    top: 1px;
+    right: -12px;
 }
