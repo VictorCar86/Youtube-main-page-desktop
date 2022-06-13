@@ -15,6 +15,9 @@ html {
     width: 100%;
     height: 56px;
     padding: 0 16px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
 }
 .extra-options {
     display: flex;
@@ -55,7 +58,7 @@ html {
 .searcher-container {
     display: flex;
     height: 56px;
-    width: 100%;
+    width: 745px;
 }
 .searcher-container form {
     display: flex;
@@ -65,11 +68,11 @@ html {
 ._input-search {
     height: 40px;
     padding: 2px 6px;
-    margin-left: 80px;
+    margin-left: 91px;
     color: #8f8f8f;
     font-size: 1.6rem;
     width: 100%;
-    max-width: 538px;
+    max-width: 539px;
     border: 1px solid #d3d3d3;
     border-top-left-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -78,10 +81,11 @@ html {
     box-shadow: inset 0px 4px 31px -33px rgba(0,0,0,1);
 }
 ._input-button {
-    width: 64px;
+    width: 63px;
     height: 40px;
     border: 1px solid #d3d3d3;
     background-color: #f8f8f8;
+    padding-top: 2px;
     border-left: 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -149,8 +153,22 @@ html {
 .aside-container {
     float: left;
     width: 12.3%;
-    height: 100%;
-    padding-right: 10px;
+    height: 94.2vh;
+    padding-right: 6px;
+    position: fixed;
+    margin-top: 56px;
+    overflow-y: scroll;
+}
+.aside-container::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+.aside-container::-webkit-scrollbar {
+    height: 3px;
+    width: 4px;
+	background-color: #F5F5F5;
+}
+.aside-container::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3;
 }
 .guide-container {
     padding: 12px 0;
@@ -198,7 +216,7 @@ html {
     display: inline-block;
     font-size: 1.4rem;
     line-height: 19.6px;
-    margin-top: 1px;
+    margin-bottom: 1px;
 }
 .new-sign-in-container {
     display: flex;
@@ -242,13 +260,13 @@ html {
     height: 70px;
 }
 .guide-links-secondary {
-    padding: 12px 10px 0 24px;
+    padding: 12px 9px 0 24px;
     height: 66px;
 }
 .guide-links-container span {
     display: inline-block;
     padding: 18px 24px;
-    color: #909090;
+    color: #e0e0e0;
     font-size: 1.2rem;
 }
 
@@ -257,7 +275,7 @@ html {
 .principal-container {
     float: right;
     width: 87.5%;
-    height: 100vh;
+    height: 100%;
     background-color: #f9f9f9;
 }
 .categories-container {
@@ -269,6 +287,9 @@ html {
     overflow-y: hidden;
     white-space: nowrap;
     background-color: white;
+    position: fixed;
+    margin-top: 56px;
+    z-index: 1;
 }
 .categories-container::-webkit-scrollbar-track {
 	background-color: #F5F5F5;
@@ -291,6 +312,7 @@ html {
     border-radius: 16px;
     font-size: 1.4rem;
     letter-spacing: 0.2px;
+    cursor: pointer;
 }
 .categories-button--main {
     margin-left: 26px;
@@ -303,14 +325,18 @@ html {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 360px);
-    grid-auto-rows: 360px;
+    grid-auto-rows: 347px;
     justify-content: center;
     margin-top: 22px;
     gap: 15px;
 }
+.videos-container--margin-top {
+    margin-top: 136px;
+}
 .video-style {
     width: 360px;
-    height: 360px;
+    height: 347px;
+    cursor: pointer;
 }
 .video-style_description-container {
     display: flex;
@@ -358,4 +384,15 @@ html {
     position: absolute;
     top: 1px;
     right: -12px;
+}
+.contents-container_divisor {
+    height: 4px;
+    width: 89%;
+    margin: 16px auto;
+    background-color: #e0e0e0;
+}
+.contents-container_divisor + h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 26px 5.9%;
 }
